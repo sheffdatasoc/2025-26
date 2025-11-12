@@ -6,10 +6,10 @@ Welcome! This is the repository for Sheffield Data Science Society's projects an
 
 The following are the past & upcoming workshops for this academic year:
 
-| Date | Workshop | Description |
-| --- | --- | --- |
-| 29/10/25 | AI Fundamentals | How to run open-source LLMs locally, and use them in your own applications |
-| TBC | Digital Twins | ... |
+| Date | Workshop | Description | Led By |
+| --- | --- | --- | --- |
+| 29/10/25 | AI Fundamentals | How to run open-source LLMs locally, and use them in your own applications | William Knott |
+| TBC | Digital Twins | ... | ... |
 
 The resources for these will be published in this repository in their corresponding folders, and are there for you to access during the sessions, or refer back to later on!
 
