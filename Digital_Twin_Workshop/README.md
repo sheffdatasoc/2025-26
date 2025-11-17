@@ -47,13 +47,36 @@ This command will:
 - Launch the digital twin simulation services
 - Run everything in the background (`-d` flag)
 
-### Step 4: Access Your Digital Twin
+### Step 4: Install Python Dependencies
 
-Once the containers are running, you can:
+Install the required Python packages:
 
-- Monitor machine data through the MQTT broker
-- View logs and system status
-- Interact with the simulated manufacturing line
+```bash
+pip install -r requirements.txt
+```
+
+### Step 5: Navigate to Main Components
+
+Navigate to the main components directory:
+
+```bash
+cd main_components
+```
+
+### Step 6: Run the Workshop Example
+
+Start the workshop demonstration script:
+
+```bash
+python workshop_example.py
+```
+
+### Step 7: View Live Updates
+
+Stay in your terminal and scroll to the bottom - you'll see the live updates from your digital twin system including:
+
+- Real-time machine data and status updates
+- MQTT message traffic between components
 
 ## 🧹 Cleanup
 
@@ -65,3 +88,4 @@ docker compose -p digitaltwin down
 
 # Stop all services and remove volumes (deletes all data)
 docker compose -p digitaltwin down -v
+```
