@@ -57,23 +57,3 @@ class MachineRegistry:
         if not machine:
             return "{}"
         return json.dumps(machine.to_dict())
-
-
-# Example usage
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    
-    # Create your machine classes (example)
-    class ExampleMachine(BaseMachine):
-        def process_mqtt(self, attribute_name, value):
-            print(f"Processing: {attribute_name} = {value}")
-    
-    # Create registry
-    registry = MachineRegistry()
-    
-    # Register machines
-    registry.register_machine("Machine01", ExampleMachine("Machine01"))
-    registry.register_machine("Machine02", ExampleMachine("Machine02"))
-    
-    # Test update
-    registry.publish_update("Machine01", "isExecuting", "true")
