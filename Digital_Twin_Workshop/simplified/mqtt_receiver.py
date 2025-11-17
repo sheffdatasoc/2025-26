@@ -40,7 +40,7 @@ class MqttReceiver:
             logger.error(f"Connection failed with code {rc}")
     
     def _on_message(self, client, userdata, msg):
-        """Called when a message is received"""
+        """Called when a message is received from the broker"""
         try:
             topic = msg.topic
             payload = msg.payload.decode('utf-8')
@@ -53,6 +53,7 @@ class MqttReceiver:
             logger.debug(f"Message: {machine_name}.{attribute_name} = {value}")
             
             # Update the machine
+            # the registry handles passing the attribute and value to the correct machine
             self.registry.publish_update(machine_name, attribute_name, value)
             
         except Exception as e:

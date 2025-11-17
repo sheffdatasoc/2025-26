@@ -22,16 +22,14 @@ class MachineRegistry:
     def publish_update(self, machine_name, attribute_name, value):
         """Update a machine based on MQTT message"""
         
-        # Ignore these
-        if machine_name in ["PunchingMachine01", "received"]:
-            return
-        
         machine = self.machines.get(machine_name)
         if not machine:
             logger.error(f"Machine '{machine_name}' not found. Available: {list(self.machines.keys())}")
             return
         
         # Handle state changes
+        # if just the execution state is changed, the registry handles it directly
+        # otherwise the machine DTOs handle the processing
         if attribute_name == "isExecuting":
             if value == "true":
                 if machine.state != MachineState.RUNNING:
@@ -46,7 +44,7 @@ class MachineRegistry:
             machine.process_mqtt(attribute_name, value)
     
     def get_machine(self, name):
-        """Get a machine by name"""
+        """Get a machine object by name"""
         return self.machines.get(name)
     
     def get_all_machines(self):
