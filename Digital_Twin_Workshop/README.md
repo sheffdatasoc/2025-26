@@ -54,3 +54,14 @@ Once the containers are running, you can:
 - Monitor machine data through the MQTT broker
 - View logs and system status
 - Interact with the simulated manufacturing line
+
+## 🧹 Cleanup
+
+When you're finished with the workshop, you can clean up the resources using these commands:
+
+```bash
+# Stop all services
+docker compose -p digitaltwin down
+
+# Stop all services and remove volumes (deletes all data)
+docker compose -p digitaltwin down -v
