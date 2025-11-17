@@ -24,7 +24,7 @@ class MachineRegistry:
         
         machine = self.machines.get(machine_name)
         if not machine:
-            logger.error(f"Machine '{machine_name}' not found. Available: {list(self.machines.keys())}")
+            logger.error(f"Machine '{machine_name}' with {attribute_name} and {value} not found. Available: {list(self.machines.keys())}")
             return
         
         # Handle state changes
