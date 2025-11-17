@@ -34,22 +34,22 @@ class SortingLine(BaseMachine):
                     "WHITE": "RIGHT"
                 }
                 self.ejected_to_branch = color_to_branch.get(self.color_present)
-                logger.info(f"{self.machine_name}: ejected {self.color_present} to {self.ejected_to_branch}")
+                #logger.info(f"{self.machine_name}: ejected {self.color_present} to {self.ejected_to_branch}")
         
         elif attribute_name == "command":
             # Extract color from command string like "<Color.RED:"
             match = re.search(r"<Color\.(RED|BLUE|WHITE):", value)
             if match:
                 self.color_present = match.group(1)
-                logger.info(f"{self.machine_name}: color_present = {self.color_present}")
+                #logger.info(f"{self.machine_name}: color_present = {self.color_present}")
         
         elif attribute_name == "colorPresent":
             self.color_present = value.upper()
-            logger.info(f"{self.machine_name}: color_present = {self.color_present}")
+            #logger.info(f"{self.machine_name}: color_present = {self.color_present}")
         
         elif attribute_name == "sortingLineActMotorConveyor":
             self.conveyor_running = value.lower() == "true"
-            logger.info(f"{self.machine_name}: conveyor_running = {self.conveyor_running}")
+            #logger.info(f"{self.machine_name}: conveyor_running = {self.conveyor_running}")
     
     def to_dict(self):
         """Convert to dictionary"""

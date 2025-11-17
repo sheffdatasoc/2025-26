@@ -37,17 +37,17 @@ class VacuumGripper(BaseMachine):
             if attribute_name == "vacuumSensRotEncoderCounter":
                 rotation_count = int(value)
                 self.delta_rotation(rotation_count)
-                logger.info(f"{self.machine_name}: rotation = {self.rotation:.1f}°")
+                #logger.info(f"{self.machine_name}: rotation = {self.rotation:.1f}°")
             
             elif attribute_name == "vacuumSensVerticalEncoderCounter":
                 height_count = int(value)
                 self.delta_height(height_count)
-                logger.info(f"{self.machine_name}: height = {self.height}mm")
+                #logger.info(f"{self.machine_name}: height = {self.height}mm")
             
             elif attribute_name == "vacuumSensArmEncoderCounter":
                 forward_count = int(value)
                 self.delta_forward(forward_count)
-                logger.info(f"{self.machine_name}: forward = {self.forward}mm")
+                #logger.info(f"{self.machine_name}: forward = {self.forward}mm")
         
         except ValueError:
             logger.warning(f"Invalid number for {attribute_name}: {value}")

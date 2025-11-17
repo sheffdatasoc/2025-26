@@ -93,7 +93,7 @@ def main():
     logger.info("Connecting to MQTT broker...")
     receiver = MqttReceiver(
         broker_url="localhost",  # Change to your MQTT broker address
-        topics=["factory/#"],     # Subscribe to all factory topics
+        topics=["PLC/Island 1/#"],     # Subscribe to all factory topics
         machine_registry=registry,
         port=1883
     )
@@ -110,7 +110,7 @@ def main():
             time.sleep(1)
             
             #Optional: Print machine states every 10 seconds
-            if int(time.time()) % 10 == 0:
+            if int(time.time()) % 5 == 0:
                 console.clear()
                 console.print("\n[bold cyan]🏭 Factory Digital Twin Status[/bold cyan]\n")
                 
@@ -119,7 +119,6 @@ def main():
                 
                 # Display in columns
                 console.print(Columns(panels, equal=True, expand=True))
-                console.print()
                 
     except KeyboardInterrupt:
         logger.info("\nShutting down...")
