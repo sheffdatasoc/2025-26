@@ -19,11 +19,11 @@ class ConveyorBelt(BaseMachine):
         """Process MQTT messages"""
         if attribute_name == "conveyorActForward":
             self.forward = value.lower() == "true"
-            logger.info(f"{self.machine_name}: forward = {self.forward}")
+            #logger.info(f"{self.machine_name}: forward = {self.forward}")
         
         elif attribute_name == "isExecuting":
             self.conveyor_running = value.lower() == "true"
-            logger.info(f"{self.machine_name}: conveyor_running = {self.conveyor_running}")
+            #logger.info(f"{self.machine_name}: conveyor_running = {self.conveyor_running}")
     
     def to_dict(self):
         """Convert to dictionary"""
