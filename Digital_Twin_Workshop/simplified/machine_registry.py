@@ -3,7 +3,7 @@ Simple machine registry for workshop demo.
 """
 import json
 import logging
-from base_machine import MachineState
+from base_machine import MachineState, BaseMachine
 
 logger = logging.getLogger(__name__)
 
