@@ -1,4 +1,3 @@
-PLC/Island 1/VacuumGripper/VacuumGripper01/measurements/input/vacuumSensVerticalEncoderCounter,"{""value"": 1770, ""timestamp"": ""2025-05-12T11:59:13.992112+00:00Z""}",0,True,1747051334.0426989,0.04095125198364258
 PLC/Island 1/VacuumGripper/VacuumGripper02/measurements/input/vacuumSensVerticalEncoderCounter,"{""value"": 807, ""timestamp"": ""2025-05-12T11:59:13.952982+00:00Z""}",0,True,1747051334.047187,0.0002076625823974
 PLC/Island 1/VacuumGripper/VacuumGripper02/measurements/input/vacuumSensRotEncoderCounter,"{""value"": 1782, ""timestamp"": ""2025-05-12T11:59:13.953249+00:00Z""}",0,True,1747051334.047321,0.0001342296600341
 PLC/Island 1/VacuumGripper/VacuumGripper02/measurements/input/vacuumSensArmEncoderCounter,"{""value"": 1865, ""timestamp"": ""2025-05-12T11:59:13.953569+00:00Z""}",0,True,1747051334.0475037,0.0001823902130126
