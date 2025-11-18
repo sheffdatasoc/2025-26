@@ -1,6 +1,4 @@
-"""
-Complete workshop example - putting it all together.
-"""
+
 import logging
 from machine_registry import MachineRegistry
 from mqtt_receiver import MqttReceiver
@@ -21,7 +19,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-####### rich formatting for machine state output #######
 # Create rich console for pretty output
 console = Console()
 
@@ -73,10 +70,8 @@ def create_machine_panel(machine):
     )
 
 
-####### actual program #######
 
 def main():
-    """Main function to run the workshop demo"""
     
     # 1. Create the machine registry
     logger.info("Setting up machine registry...")
@@ -92,7 +87,7 @@ def main():
     # 3. Set up MQTT receiver
     logger.info("Connecting to MQTT broker...")
     receiver = MqttReceiver(
-        broker_url="localhost",  # Change to your MQTT broker address
+        broker_url="localhost",  
         topics=["PLC/Island 1/#"],     # Subscribe to all factory topics
         machine_registry=registry,
         port=1883
@@ -109,15 +104,12 @@ def main():
         while True:
             time.sleep(1)
             
-            #Optional: Print machine states every 10 seconds
             if int(time.time()) % 5 == 0:
                 console.clear()
                 console.print("\n[bold cyan]🏭 Factory Digital Twin Status[/bold cyan]\n")
                 
-                # Create panels for each machine
                 panels = [create_machine_panel(machine) for machine in registry.get_all_machines()]
                 
-                # Display in columns
                 console.print(Columns(panels, equal=True, expand=True))
                 
     except KeyboardInterrupt:

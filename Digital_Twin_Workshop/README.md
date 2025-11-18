@@ -4,7 +4,7 @@ Welcome to the **Digital Twin Workshop** - an interactive learning experience th
 
 ## 🎯 Overview
 
-This workshop provides a hands-on introduction to digital twin technology using a simulated manufacturing environment. You'll work with virtual machines, conveyor belts, and sorting systems that mirror real-world industrial processes.
+This workshop provides a hands-on introduction to digital twin technology using a simulated manufacturing environment. You'll work with a Sorting Machine, Conveyor Belt and a Vacuum Gripper.
 
 ## 🚀 Quick Start Guide
 
