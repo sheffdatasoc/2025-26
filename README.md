@@ -9,7 +9,8 @@ The following are the past & upcoming workshops for this academic year:
 | Date | Workshop | Description | Led By |
 | --- | --- | --- | --- |
 | 29/10/25 | AI Fundamentals | How to run open-source LLMs locally, and use them in your own applications | William Knott |
-| TBC | Digital Twins | ... | ... |
+| 19/11/25 | Digital Twins | ... | ... |
+| 26/11/25 | Year 1 Project Support | ... | ... |
 
 The resources for these will be published in this repository in their corresponding folders, and are there for you to access during the sessions, or refer back to later on!
 
