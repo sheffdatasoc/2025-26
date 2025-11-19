@@ -39,9 +39,8 @@ class MachineRegistry:
                 if machine.state != MachineState.IDLE:
                     logger.info(f"{machine_name} is now IDLE")
                     machine.state = MachineState.IDLE
-        else:
             # Let the machine handle other attributes
-            machine.process_mqtt(attribute_name, value)
+        machine.process_mqtt(attribute_name, value)
     
     def get_machine(self, name):
         """Get a machine object by name"""
