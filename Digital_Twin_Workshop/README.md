@@ -1,10 +1,19 @@
 # 🏭 Digital Twin Workshop
 
-Welcome to the **Digital Twin Workshop** - an interactive learning experience that demonstrates the power of digital twins in modern manufacturing and IoT systems!
+Welcome to the **Digital Twin Workshop** - an interactive learning experience that demonstrates the power of digital twins in modern manufacturing and IoT systems
+
 
 ## 🎯 Overview
 
 This workshop provides a hands-on introduction to digital twin technology using a simulated manufacturing environment. You'll work with a Sorting Machine, Conveyor Belt and a Vacuum Gripper.
+
+![Digital Twin Workshop](https://github.com/user-attachments/assets/1f313db1-1da6-495d-ba22-23005f24a9fe)
+- Look at how the process_mqtt is implemented in the other classes
+- Print the attribute_name and the value the conveyor_belt receives from mqtt
+- Think about how to adapt the of the other classes for the conveyor_belts mqtt attribute names
+- Implement the to_dict and __repr__ function
+
+
 
 ## 🚀 Quick Start Guide
 
