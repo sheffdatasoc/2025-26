@@ -1,8 +1,9 @@
 ### Links to further resources/documentation:
 
 #### DataSoc guides:
-- [Python]
-- [SQL]
+- [Python](https://uosdss.wordpress.com/2024/10/05/python-guide/)
+- [SQL](https://uosdss.wordpress.com/2025/11/24/sql-guide-2/)
+- [(All Guides)](https://uosdss.wordpress.com/guides/)
 
 #### Other useful resources:
 - [SQLite documentation](https://sqlite.org/lang.html)
