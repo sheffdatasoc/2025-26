@@ -1,7 +1,7 @@
 ### Links to further resources/documentation:
 
 #### DataSoc guides:
-- [Python](https://uosdss.wordpress.com/2024/10/05/python-guide/)
+- [Python](https://uosdss.wordpress.com/2025/11/25/python-guide-2/)
 - [SQL](https://uosdss.wordpress.com/2025/11/24/sql-guide-2/)
 - [(All Guides)](https://uosdss.wordpress.com/guides/)
 
