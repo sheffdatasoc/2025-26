@@ -9,8 +9,9 @@ The following are the past & upcoming workshops for this academic year:
 | Date | Workshop | Description | Led By |
 | --- | --- | --- | --- |
 | 29/10/25 | AI Fundamentals| How to run open-source LLMs locally, and use them in your own applications | William Knott |
-| 19/11/25 | Digital Twins | ... | ... |
-| 26/11/25 | INF111& INF112 Project Support | ... | ... | 
+| 19/11/25 | Digital Twins | Showcasing an example of a Digital Twin project for manufacturing | Jakob Titz & Phil Poellmann |
+| 26/11/25 | Year 1 Project Support | Provided resources & guidance for the first-year BSc Data Science project (IJC105 & IJC109) | Poppy Dobson | 
+| ... | ... | ... | ... |
 
 The resources for these will be published in this repository in their corresponding folders, and are there for you to access during the sessions, or refer back to later on!
 
